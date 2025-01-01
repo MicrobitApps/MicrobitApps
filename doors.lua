@@ -36,8 +36,16 @@ local Window = Rayfield:CreateWindow({
  local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
  local KnobFuckButton = Tab:CreateButton({
-    Name = "Fuck Knobs",
+    Name = "Fuck Coins",
     Callback = function()
    game.Players.LocalPlayer.Gold.Value += 999999999999999999999999
+    end,
+ })
+
+ local killButton = Tab:CreateButton({
+    Name = "Kys",
+    Callback = function()
+   game.Players.LocalPlayer:SetAttribute("Alive", false)
+   
     end,
  })
